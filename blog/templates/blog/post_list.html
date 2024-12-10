@@ -7,17 +7,13 @@
         <header>
             <h1><a href="/">Django JanKK Blog</a></h1>
         </header>
-
-        <article>
-            <time>Ngày tạo: 2024/12/8, 20:41</time>
-            <h2><a href="">Bài đăng số 1</a></h2>
-            <p>Xin chào! Đây là trang web đầu tiên được khởi tạo bởi JanKK.</p>
-        </article>
-
-        <article>
-            <time>Ngày tạo: 2024/12/8, 20:42</time>
-            <h2><a href="">Bài đăng số 2</a></h2>
-            <p>Ngày hôm nay tôi bắt đầu học lập trình django và python.</p>
-        </article>
+        
+        {% for post in posts %}
+            <article>
+                <time>published: {{ post.published_date }}</time>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </article>
+        {% endfor %}
     </body>
 </html>
