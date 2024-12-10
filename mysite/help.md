@@ -37,3 +37,6 @@ Nhập nội dung sau vào bảng điều khiển của bạn (thay thế <your-
 
  git remote add origin https://github.com/JanKKaa/my-first-blog.git
  git push -u origin HEAD
+
+ Để cài đặt Bootstrap, hãy mở .htmltệp của bạn trong trình soạn thảo mã và thêm nội dung sau vào <head>phần này:
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
